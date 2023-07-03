@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class AdminCategoryController {
     private final ICategoryService categoryService;
+
+    //coment
     @PostMapping("/create")
     public Result<?> createC(@RequestBody CategoryDTO dto){
         CategoryDTO categoryDTO = categoryService.create(dto);
